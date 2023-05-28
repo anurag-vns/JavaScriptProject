@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <script>
+        function Hello()
+        {
+            var elements=document.getElementsByTagName("h1");  //search elements by tag name
+var n=elements.length;
+for(var i=0;i<=n-1;i++)
+{
+elements[i].innerHTML=i+1;
+
+
+}
+        }
+    </script>
+</head>
+<body>
+    A<h1></h1>
+<br/>
+B<h1></h1>
+<br/>
+C<h1></h1>
+<br/>
+<input type="button" onclick="Hello()" value="submit"/>
+
+</body>
+</html>

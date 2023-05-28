@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Id</title>
+    <script>
+        function doSwap() {
+            var x = document.getElementById("ta"); //based on any one item search value
+            var y = document.getElementById("tb");
+            var t = x.value;
+            console.log(`t=${t}`);  // for show output
+            x.value = y.value;
+            console.log(`x=${x.value}`);
+            y.value = t;
+            console.log(`y=${y.value}`);
+        }
+    </script>
+</head>
+
+<body>
+    A<input type="text" id="ta" />
+    <br />
+    B<input type="text" id="tb" />
+    <br />
+    <input type="button" onclick="doSwap()" value="Swap" />
+</body>
+
+</html>

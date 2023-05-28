@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Name</title>
+<script>
+function doCheckAll()
+{
+
+var radiobuttons=document.getElementsByName("game"); //searchig based on element name
+var n=radiobuttons.length;
+for(var i=0;i<=n-1;i++)
+{
+radiobuttons[i].type="text";
+
+
+}
+}
+</script>
+</head>
+<body>
+A<input type="radio" name="game"/>
+<br/>
+B<input type="radio" name="game"/>
+<br/>
+C<input type="radio" name="game"/>
+<br/>
+D<input type="radio" name="game"/>
+<br/>
+E<input type="radio" name="game"/>
+<br/>
+F<input type="radio" name="game"/>
+<br/>
+<input type="button" onclick="doCheckAll()" value="UnCheck"/>
+</body>
+</html>

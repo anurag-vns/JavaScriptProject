@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add to text number</title>
+    <script>
+        function addnumber() 
+        {
+            var x = document.getElementById("ta"); //based on any one item search value
+            var y = document.getElementById("tb");
+            var z= document.getElementById("tc");
+            var t =Number(x.value);
+            var s= Number(y.value);
+            z.value= t+s;
+            console.log(`z=${z.value}`);
+            
+        }
+
+
+        function Subtraction()
+        {
+            var x = document.getElementById("ta"); //based on any one item search value
+            var y = document.getElementById("tb");
+            var z= document.getElementById("tc");
+            var t =Number(x.value);
+            var s= Number(y.value);
+            z.value=t-s;
+            console.log(z.value);
+        }
+
+        function multplication()
+        {
+            var x = document.getElementById("ta"); //based on any one item search value
+            var y = document.getElementById("tb");
+            var z= document.getElementById("tc");
+            var t =Number(x.value);
+            var s= Number(y.value);
+            z.value=t*s;
+            console.log(z.value);
+        }
+
+        function divide()
+        {
+            
+            var x = document.getElementById("ta"); //based on any one item search value
+            var y = document.getElementById("tb");
+            var z= document.getElementById("tc");
+            var t =Number(x.value);
+            var s= Number(y.value);
+            z.value=t/s;
+            console.log(z.value);
+        }
+
+        function interest()
+        {
+            
+            var x = document.getElementById("ta"); //based on any one item search value
+            var y = document.getElementById("tb");
+            var z= document.getElementById("tc");
+            var i= document.getElementById("tk");
+            var p =Number(x.value);
+            var r= Number(y.value);
+            var t= Number(z.value);
+            i.value=p*r*t/100;
+            console.log(i.value);
+        }
+
+      
+    </script>
+</head>
+<body>
+    A<input type="text" id="ta" />
+    <br />
+    B<input type="text" id="tb" />
+    <br />
+    C<input type="text" id="tc"/>
+    <br/>
+    D<input type ="text" id="tk"/>
+    <br/>
+    <input type="button" onclick="addnumber()" value="Add" />
+    <input type="button" onclick="Subtraction()" value="Subtraction"/>
+    <input type="button" onclick="multplication()" value="multplication"/>
+    <input type="button" onclick="divide()" value="divide"/>
+    <input type="button" onclick="interest()" value="Interest"/>
+    
+</body>
+</html>

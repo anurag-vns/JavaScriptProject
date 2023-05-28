@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <script>
+                function totalmarks() 
+        {
+            var x = document.getElementById("a"); //based on any one item search value
+            var y = document.getElementById("b");
+            var z= document.getElementById("c");
+            var o= document.getElementById("d");
+           
+            var i =Number(x.value);
+            var j= Number(y.value);
+            var k=Number(z.value);
+            o.value= i+j+k;
+            console.log(`o=${o.value}`);
+            
+        }
+
+        function percentage()
+        {
+            var x = document.getElementById("a"); //based on any one item search value
+            var y = document.getElementById("b");
+            var z= document.getElementById("c");
+            var p= document.getElementById("e");
+           
+            var i =Number(x.value);
+            var j= Number(y.value);
+            var k=Number(z.value);
+            p.value= (i+j+k)/3;
+            console.log(`p=${p.value}`);
+        }
+
+    </script>
+</head>
+<body>
+    Hindi<input type="text" id="a" />
+    <br />
+    English<input type="text" id="b" />
+    <br />
+    Math<input type="text" id="c"/>
+    <br/>
+    Total Marks<input type ="text" id="d"/>
+    <br/>
+    Total Percentage<input type ="text" id="e"/>
+    <br/>
+    <input type="button" onclick="totalmarks()" value="Total" />
+    <input type="button" onclick="percentage()" value="Percentage"/>
+</body>
+</html>
