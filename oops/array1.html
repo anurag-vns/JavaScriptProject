@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array with object</title>
+    <script>
+        function create(){
+let student = [{name:"sachin",age:"25"},{name:"manish",age:"28"}];
+
+return student;
+
+        }
+    </script>
+</head>
+<body>
+    <h2>Name :</h2>
+    <h2 id="n"></h2>
+    <h2>age :</h2>
+    <h2 id="a"></h2>
+    <br>
+    <h2>Name :</h2>
+    <h2 id="nm"></h2>
+    <br>
+    <h2>age :</h2>
+    <h2 id="ag"></h2>
+    <script>
+        let x=create();
+        console.log(x) ;
+      
+        document.getElementById("n").innerHTML =x[0].name;
+        document.getElementById("a").innerHTML =x[0].age;
+        document.getElementById("nm").innerHTML =x[1].name;
+        document.getElementById("ag").innerHTML =x[1].age;
+        
+
+        
+    </script>
+</body>
+</html>
+

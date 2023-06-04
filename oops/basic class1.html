@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result object</title>
+    <script>
+         function create() {
+            let result = {
+                Roll: "5",
+                name: "Dhoni",
+                physics:"70",
+                chemestry:"87"
+            };
+            return result;
+        }
+    </script>
+</head>
+<body>
+    <h2>roll  :</h2>
+    <h2 id="r"></h2>
+    <br>
+    <h2>Name :</h2>
+    <h2 id="n"></h2>
+    <br>
+    <h2>physics :</h2>
+    <h2 id="p"></h2>
+    <br>
+    <h2>chemestry :</h2>
+    <h2 id="c"></h2>
+    <script>
+        let x = create();
+        console.log(x.Roll);
+        console.log(x.name);
+        console.log(x.physics);
+        console.log(x.chemestry);
+        document.getElementById("r").innerHTML = x.Roll;
+        document.getElementById("n").innerHTML = x.name;
+        document.getElementById("p").innerHTML = x.physics;
+        document.getElementById("c").innerHTML = x.chemestry;
+
+        </script>
+    
+</body>
+</html>
