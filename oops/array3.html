@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array position </title>
+</head>
+<script>
+   
+   let z=0;
+    function positon(){
+        let student = [{name:"sachin", age:"30"},{name:"rohit",age:"25"},{name:"virat",age:"26"},{name:"dhoni",age:"25"}];
+        return student;
+    }
+    function student1(){
+        z=z+1;
+        console.log(z);
+        let x=positon();
+        document.getElementById("n").innerHTML =x[z].name;
+        document.getElementById("a").innerHTML =x[z].age;
+    }
+</script>
+<body>
+    <h2>Name :</h2>
+    <h2 id="n"></h2>
+    <br>
+    <h2>age :</h2>
+    <h2 id="a"></h2>
+
+    <input type="button" onclick="student1()" value="Next"/>
+    <script>
+      let x=positon();
+        
+        document.getElementById("n").innerHTML =x[z].name;
+        document.getElementById("a").innerHTML =x[z].age;
+    </script>
+    
+</body>
+</html>
