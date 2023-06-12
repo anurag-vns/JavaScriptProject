@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es6 class</title>
+</head>
+<script>
+    class Person {
+  constructor(name,address,age) {
+    this.name = name;
+    this.address=address;
+    this.age = age;
+  }
+  
+  greet() {
+    console.log(`Hello, my name is ${this.name} and address is ${this.address} and I'm ${this.age} years old.`);
+  }
+}
+
+const set= new Person("Anurag","Mirzapur",30);
+set.greet(); // Output: Hello, my name is Champak and I'm 30 years old.
+</script>
+<body>
+    
+</body>
+</html>
